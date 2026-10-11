@@ -115,9 +115,9 @@ function go(n){
  setTimeout(()=>{
   step=n;hb=null;$('#logo').classList.toggle('min',n>0);acts.innerHTML='';cap.textContent='';setBg();stage.classList.remove('out');
   const cx=W/2,cy=H/2;burst(cx,cy,40);
-  if(n==0){say('welcom to stikkky');setTimeout(()=>go(1),3300)}
-  else if(n==1){const d=say('u wants to decorate ur life with some personal ideas',true);setTimeout(choices,Math.min(d,1800))}
-  else{say('u chose a choice u will never regret.',true);setTimeout(mkHold,1400)}
+  if(n==0){say('welcom to stickyyyy');setTimeout(()=>go(1),3300)}
+  else if(n==1){const d=say('u want to decorate ur life with some personal ideas',true);setTimeout(choices,Math.min(d,1800))}
+  else{say('You made a choice you will never regret',true);setTimeout(mkHold,1400)}
  },n==0?0:340);
 }
 function choices(){
